@@ -1,0 +1,97 @@
+.code-group__header ~ .code-block.active .copy[data-v-9e4fcf30] {
+    position: absolute;
+    right: 15px;
+    color: #bdbdbd;
+  }
+  .copy[data-v-9e4fcf30] {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #bdbdbd;
+  }
+  .field-copy .copy[data-v-9e4fcf30] {
+    top: 40px;
+    right: 25px;
+  }
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .code-group__header ~ .code-block.active .copy[data-v-9e4fcf30] {
+    position: absolute;
+    right: 15px;
+    color: #bdbdbd;
+  }
+  .copy[data-v-9e4fcf30] {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #bdbdbd;
+  }
+  .field-copy .copy[data-v-9e4fcf30] {
+    top: 40px;
+    right: 25px;
+  }
+  }
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .code-group__header ~ .code-block.active .copy[data-v-9e4fcf30] {
+    position: absolute;
+    right: 15px;
+    color: #bdbdbd;
+  }
+  .copy[data-v-9e4fcf30] {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #bdbdbd;
+  }
+  .field-copy .copy[data-v-9e4fcf30] {
+    top: 40px;
+    right: 25px;
+  }
+  
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+
+  .code-group__header ~ .code-block.active .copy[data-v-9e4fcf30] {
+    position: absolute;
+    right: 15px;
+    color: #bdbdbd;
+  }
+  .copy[data-v-9e4fcf30] {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #bdbdbd;
+  }
+  .field-copy .copy[data-v-9e4fcf30] {
+    top: 40px;
+    right: 25px;
+  }
+  }
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
+
+  .code-group__header ~ .code-block.active .copy[data-v-9e4fcf30] {
+    position: absolute;
+    right: 15px;
+    color: #bdbdbd;
+  }
+  .copy[data-v-9e4fcf30] {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #bdbdbd;
+  }
+  .field-copy .copy[data-v-9e4fcf30] {
+    top: 40px;
+    right: 25px;
+  }
+}

@@ -1,0 +1,7 @@
+*.db
+*.db.old
+.sass-cache
+.idea/*
+/assets/img
+/.sass-cache
+assets/lib

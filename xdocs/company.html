@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
+  <link rel="stylesheet" href="dropdown-scroll.css">
+  <!-- Boxiocns CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+  <title>developer.xdocs.com</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="xDocs">
+  <link rel="icon" sizes="192x192" href="assets/img/basic/chrome-touch-icon-192x192.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+  <link rel="apple-touch-icon" href="./assets/img/basic/apple-touch-icon.png">
+
+  <meta name="msapplication-TileImage" content="assets/img/basic/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#55acee">
+  <meta name="theme-color" content="#55acee">
+  <link href="./assets/css/sidebar.css" rel="stylesheet" type="text/css">
+  <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
+  <link href="./assets/css/custom.css" rel="stylesheet" type="text/css">
+  <link href="./assets/css/index.css" rel="stylesheet" type="text/css">
+  <link href="./assets/css/footer.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<script>
+
+  function toggle() {
+    // Location.replace("quick.html");
+    window.location.replace("quick.html")
+  }
+  function netApp() {
+    Location.replace("payment.html");
+  }
+  function receive() {
+    Location.replace("receive.html");
+
+  }
+  function plugin() {
+    Location.replace("reference.html")
+  }
+
+  const start = document.querySelector("start")
+  start.className.c
+</script>
+
+<body>
+  <div class="wrapper">
+    <div class="sidebar doc-header">
+      <div class="logo-details">
+        <span class="logo_name">netapps</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="index.html">
+            <i class='bx bx-grid-alt'></i>
+            <span class="link_name">Home</span>
+          </a>
+
+        <li>
+          <div class="icon-link">
+            <a href="payment.html">
+              <i class='bx bx-collection'></i>
+              <span class="link_name">Payment</span>
+            </a>
+      </div>
+
+        </li>
+       
+       
+        <li>
+          <div class="icon-link">
+            <a href="reference.html">
+              <i class='bx bx-book-alt'></i>
+              <span class="link_name">SDKs Console</span>
+            </a>
+      
+      </ul>
+    </div>
+    <div class="home-section contentAreas">
+
+      <div  class="totalCSS">
+
+
+        <input type="text" class ="search-input"  value="" id="search" onchange="handleChange()" data-ic-class="search-input" placeholder="Search Documentation"/>
+       
+        
+          <h3>Understanding NetApps Company and Business</h3>
+
+      <div>
+        </div>
+        <ol>
+          <li>
+
+               One company multiple businesses: This means that when a merchant
+               creates an account and creates a company,merchants can create multiple
+               businesses for the same company.
+           
+          </li>
+        </hr>
+          <li>
+               if you want your company name and business name the same, choosing yes
+               will give the company and business the same details.
+
+               <img src="create.JPG" alt="Flowers in Chania">
+      
+         </li>
+        </hr>    
+        <li>
+            
+            Upload a different file types except (png,jpeg,jpg) of not more than 3mb
+   
+        </li>
+           <li>
+                 All business names must be different
+          
+            </li>
+         </ol>
+       </hr>
+      
+        <footer>
+          <hr />
+
+          <div class="grid-contain row primary">
+            <p>
+            <div class="column about">
+              <div class="cardsData" onclick="quickStart()">
+                <b>Have any question?</b></br>
+                Get in touch if you have any question or need help with integrating the Net App API.
+                </p>
+              </div>
+            </div>
+
+            <div class="column about">
+              <div class="cardsData" onclick="receive()">
+                <b>Tutorial Video</b></br>
+                <p></p>
+                The NetApp API integration lessons are available on our YouTube channel.
+              </div>
+            </div>
+          </div>
+          <div>
+            <center><p>Copyright &copy; </p></center>
+            
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let arrow = document.querySelectorAll(".arrow");
+    for (var i = 0; i < arrow.length; i++) {
+      arrow[i].addEventListener("click", (e) => {
+        let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+        arrowParent.classList.toggle("showMenu");
+      });
+    }
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".bx-menu");
+    console.log(sidebarBtn);
+    
+    $(function () {
+      
+      resizeScreen();
+      $(window).resize(function () {
+        resizeScreen();
+      });
+      $('.bx-menu').click(function () {
+
+        if (document.body.clientWidth > 400) {
+          $('.sidebar').toggleClass('close');
+        } else {
+          $('.sidebar').toggleClass('small-screen');
+        }
+      });
+
+      function resizeScreen() {
+        if (document.body.clientWidth < 400) {
+          $('.sidebar').addClass('close');
+        } else {
+          $('.sidebar').removeClass('close');
+        }
+      }
+    });
+  </script>
+</body>
+
+<script src="./assets/js/search.js" type="text/javascript"></script>
+
+</html>
